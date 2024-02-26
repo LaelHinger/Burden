@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/audio_hero_Maelstrom_SIPML_J-0207.mp3-e2a64a2a1d59d6fd593b429497507bf9.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Music/audio_hero_Maelstrom_SIPML_J-0207.mp3"
+dest_files=[ "res://.import/audio_hero_Maelstrom_SIPML_J-0207.mp3-e2a64a2a1d59d6fd593b429497507bf9.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

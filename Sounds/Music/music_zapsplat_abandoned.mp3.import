@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/music_zapsplat_abandoned.mp3-a0a431d44b18957a7323f6374959fd41.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Music/music_zapsplat_abandoned.mp3"
+dest_files=[ "res://.import/music_zapsplat_abandoned.mp3-a0a431d44b18957a7323f6374959fd41.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

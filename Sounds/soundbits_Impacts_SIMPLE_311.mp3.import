@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/soundbits_Impacts_SIMPLE_311.mp3-ead0cb43c045b0a55bb8498214d242c3.mp3str"
+
+[deps]
+
+source_file="res://Sounds/soundbits_Impacts_SIMPLE_311.mp3"
+dest_files=[ "res://.import/soundbits_Impacts_SIMPLE_311.mp3-ead0cb43c045b0a55bb8498214d242c3.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

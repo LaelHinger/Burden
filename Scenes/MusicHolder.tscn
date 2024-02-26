@@ -1,0 +1,36 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Scripts/Bard_Music.gd" type="Script" id=1]
+[ext_resource path="res://Sounds/Bard/2_.mp3" type="AudioStream" id=2]
+[ext_resource path="res://Sounds/Bard/3_.mp3" type="AudioStream" id=3]
+[ext_resource path="res://Sounds/Bard/Initial.mp3" type="AudioStream" id=4]
+[ext_resource path="res://Sounds/Bard/1_.mp3" type="AudioStream" id=5]
+[ext_resource path="res://Sounds/Bard/_5.mp3" type="AudioStream" id=6]
+[ext_resource path="res://Sounds/Bard/6_.mp3" type="AudioStream" id=7]
+[ext_resource path="res://Sounds/Bard/4_.mp3" type="AudioStream" id=8]
+[ext_resource path="res://Sounds/Bard/7_.mp3" type="AudioStream" id=9]
+[ext_resource path="res://Sounds/Bard/8_.mp3" type="AudioStream" id=10]
+[ext_resource path="res://Sounds/Bard/9_.mp3" type="AudioStream" id=11]
+[ext_resource path="res://Sounds/Bard/10_.mp3" type="AudioStream" id=12]
+
+[node name="MusicHolder" type="Node2D"]
+script = ExtResource( 1 )
+Soundclip1 = ExtResource( 4 )
+Soundclip2 = ExtResource( 5 )
+Soundclip3 = ExtResource( 2 )
+Soundclip4 = ExtResource( 3 )
+Soundclip5 = ExtResource( 8 )
+Soundclip6 = ExtResource( 6 )
+Soundclip7 = ExtResource( 7 )
+Soundclip8 = ExtResource( 9 )
+Soundclip9 = ExtResource( 10 )
+Soundclip10 = ExtResource( 11 )
+Soundclip11 = ExtResource( 12 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+max_distance = 500.0
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

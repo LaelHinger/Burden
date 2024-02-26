@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/PM_Church_Bells_Distant_People_Walla_Dog_Wind_Old_Town_Spain.mp3-2b6b07f1084a9f135b9058c6e0fab8f2.mp3str"
+
+[deps]
+
+source_file="res://Sounds/PM_Church_Bells_Distant_People_Walla_Dog_Wind_Old_Town_Spain.mp3"
+dest_files=[ "res://.import/PM_Church_Bells_Distant_People_Walla_Dog_Wind_Old_Town_Spain.mp3-2b6b07f1084a9f135b9058c6e0fab8f2.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

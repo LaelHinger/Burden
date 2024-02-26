@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/LadderSFX.mp3-42b22c758a2f5b45dc2023620d0c1cd6.mp3str"
+
+[deps]
+
+source_file="res://Sounds/LadderSFX.mp3"
+dest_files=[ "res://.import/LadderSFX.mp3-42b22c758a2f5b45dc2023620d0c1cd6.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

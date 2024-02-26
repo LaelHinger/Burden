@@ -1,0 +1,206 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Fonts/Kenney Mini.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Levels/Start/Button.gd" type="Script" id=2]
+[ext_resource path="res://Levels/Start/Hand.png" type="Texture" id=3]
+[ext_resource path="res://Sounds/Music/music_biiansu_nona_biiansu_longs_cinematic_drones_textures_020.mp3" type="AudioStream" id=4]
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="DynamicFont" id=1]
+size = 128
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 48
+font_data = ExtResource( 1 )
+
+[sub_resource type="Animation" id=4]
+resource_name = "Opening"
+length = 15.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Panel/Label:custom_colors/font_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( -0.8, 5.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0.752941, 0, 0, 0 ), Color( 0.752941, 0, 0, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Panel/Click To  Start:percent_visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( -4.9, -1.8, 5.3, 6.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 1.0, 0.0, 0.0, 1.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Panel/Click To  Start:visible_characters")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"update": 1,
+"values": [  ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Panel/TextureRect/Hand:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( -2.3, 5.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1114, 1336 ), Vector2( 1114, 720 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Panel/Click To  Start:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 5.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
+[sub_resource type="Animation" id=5]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Panel/Label:custom_colors/font_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0.752941, 0, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Panel/Click To  Start:percent_visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Panel/Click To  Start:visible_characters")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -1 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Panel/TextureRect/Hand:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1114, 1336 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Panel/Click To  Start:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="CanvasLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 2 )
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Hand" type="Sprite" parent="CanvasLayer/Panel/TextureRect"]
+position = Vector2( 1114, 1336 )
+scale = Vector2( 4, 4 )
+texture = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="CanvasLayer/Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -130.0
+margin_bottom = -430.0
+rect_pivot_offset = Vector2( 933, 353 )
+custom_colors/font_color = Color( 0.752941, 0, 0, 0 )
+custom_fonts/font = SubResource( 1 )
+text = "Thy Burden"
+align = 1
+valign = 1
+
+[node name="Click To  Start" type="Label" parent="CanvasLayer/Panel"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = -300.0
+rect_pivot_offset = Vector2( 933, 353 )
+custom_colors/font_color = Color( 0, 0.0745098, 0.847059, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "Click to start"
+align = 1
+valign = 1
+percent_visible = -0.0833333
+
+[node name="Button" type="Button" parent="CanvasLayer/Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+flat = true
+script = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer"]
+autoplay = "Opening"
+anims/Opening = SubResource( 4 )
+anims/RESET = SubResource( 5 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = -10.0
+autoplay = true
+
+[connection signal="pressed" from="CanvasLayer/Panel/Button" to="CanvasLayer/Panel/Button" method="_on_Button_pressed"]

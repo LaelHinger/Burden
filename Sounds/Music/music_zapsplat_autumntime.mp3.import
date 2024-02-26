@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/music_zapsplat_autumntime.mp3-9d1aac5b9ef4bbbbd0ac0a7c46850678.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Music/music_zapsplat_autumntime.mp3"
+dest_files=[ "res://.import/music_zapsplat_autumntime.mp3-9d1aac5b9ef4bbbbd0ac0a7c46850678.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

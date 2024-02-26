@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/9_.mp3-58ce375d42aae8cb33314e578129efed.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Bard/9_.mp3"
+dest_files=[ "res://.import/9_.mp3-58ce375d42aae8cb33314e578129efed.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

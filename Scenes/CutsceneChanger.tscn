@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://CutsceneChange.gd" type="Script" id=1]
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 38.125, 23.75 )
+
+[node name="CutsceneChanger" type="Area2D"]
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 6 )
+
+[connection signal="body_entered" from="." to="." method="_on_CutsceneChanger_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_CutsceneChanger_body_exited"]

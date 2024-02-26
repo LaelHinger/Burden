@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/music_biiansu_nona_biiansu_longs_cinematic_drones_textures_020.mp3-759a73a1de5d02f16b7f8504987b210f.mp3str"
+
+[deps]
+
+source_file="res://Scenes/music_biiansu_nona_biiansu_longs_cinematic_drones_textures_020.mp3"
+dest_files=[ "res://.import/music_biiansu_nona_biiansu_longs_cinematic_drones_textures_020.mp3-759a73a1de5d02f16b7f8504987b210f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

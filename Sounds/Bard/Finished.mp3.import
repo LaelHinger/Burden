@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Finished.mp3-5ed38b4879a40129960dce8e1811a428.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Bard/Finished.mp3"
+dest_files=[ "res://.import/Finished.mp3-5ed38b4879a40129960dce8e1811a428.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

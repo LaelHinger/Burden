@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/music_zapsplat_ghosts_walk_here_no_drums_edit_133.mp3-5be969a118005b620054fc5889884c9d.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Music/music_zapsplat_ghosts_walk_here_no_drums_edit_133.mp3"
+dest_files=[ "res://.import/music_zapsplat_ghosts_walk_here_no_drums_edit_133.mp3-5be969a118005b620054fc5889884c9d.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

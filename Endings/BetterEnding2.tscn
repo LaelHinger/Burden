@@ -1,0 +1,326 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://Endings/Camera_Follow.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/Ending2/Road.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Ending2/Player2.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Ending2/Person.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Ending2/Stairs.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Ending2/Backspires.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Ending2/MidcityArea.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Ending2/Moon.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Ending1_Backgrounds/Player.png" type="Texture" id=9]
+[ext_resource path="res://Fonts/Kenney Pixel.ttf" type="DynamicFontData" id=10]
+[ext_resource path="res://Sounds/Music/audio_hero_Maelstrom_SIPML_J-0207.mp3" type="AudioStream" id=11]
+[ext_resource path="res://Fonts/Kenney Mini.ttf" type="DynamicFontData" id=12]
+[ext_resource path="res://Scenes/BackToMenu.tscn" type="PackedScene" id=13]
+
+[sub_resource type="Animation" id=4]
+resource_name = "Ending1"
+length = 60.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Camera2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 389, 239 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Camera2D:zoom")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.28, 0.28 ), Vector2( 0.4, 0.4 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CanvasLayer/Panel/Ending Text:percent_visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 6, 9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("CanvasLayer/Control/FadeToBlack/Panel/End:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 12.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("CanvasLayer/Control/FadeToBlack/Panel:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 12.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("CanvasLayer/Panel:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 6, 12.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+
+[sub_resource type="Animation" id=5]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Camera2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 389, 239 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Camera2D:zoom")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0.4, 0.4 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CanvasLayer/Panel/Ending Text:percent_visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("CanvasLayer/Control/FadeToBlack/Panel/End:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("CanvasLayer/Control/FadeToBlack/Panel:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("CanvasLayer/Panel:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+
+[sub_resource type="DynamicFont" id=6]
+size = 48
+font_data = ExtResource( 12 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 64
+font_data = ExtResource( 10 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="BackToMenu" parent="." instance=ExtResource( 13 )]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 389, 239 )
+current = true
+zoom = Vector2( 0.4, 0.4 )
+script = ExtResource( 1 )
+
+[node name="Art" type="Node2D" parent="."]
+
+[node name="FarBack" type="CanvasLayer" parent="Art"]
+follow_viewport_enable = true
+
+[node name="Panel" type="Control" parent="Art/FarBack"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="Art/FarBack/Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Moon" type="Sprite" parent="Art/FarBack/Panel/AspectRatioContainer"]
+position = Vector2( 390, 197 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 8 )
+
+[node name="Clouds" type="CanvasLayer" parent="Art"]
+follow_viewport_enable = true
+follow_viewport_scale = 0.9
+
+[node name="Clouds" type="Sprite" parent="Art/Clouds"]
+position = Vector2( 389.167, 231.667 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 6 )
+
+[node name="FurthestCity" type="CanvasLayer" parent="Art"]
+follow_viewport_enable = true
+follow_viewport_scale = 1.1
+
+[node name="FurthestCity" type="Sprite" parent="Art/FurthestCity"]
+position = Vector2( 389, 239 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 7 )
+
+[node name="MidCity" type="CanvasLayer" parent="Art"]
+follow_viewport_enable = true
+follow_viewport_scale = 1.2
+
+[node name="Midcity" type="Sprite" parent="Art/MidCity"]
+position = Vector2( 389.167, 231.667 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 2 )
+
+[node name="Spire" type="CanvasLayer" parent="Art"]
+follow_viewport_enable = true
+follow_viewport_scale = 1.3
+
+[node name="FurthestCity" type="Sprite" parent="Art/Spire"]
+position = Vector2( 369.231, 250.769 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 5 )
+
+[node name="RigthTower" type="CanvasLayer" parent="Art"]
+follow_viewport_enable = true
+follow_viewport_scale = 1.4
+
+[node name="Twer" type="Sprite" parent="Art/RigthTower"]
+position = Vector2( 402.857, 232.857 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 4 )
+
+[node name="ForegroundSeat" type="CanvasLayer" parent="Art"]
+follow_viewport_enable = true
+follow_viewport_scale = 1.5
+
+[node name="FGSeat" type="Sprite" parent="Art/ForegroundSeat"]
+position = Vector2( 389.167, 231.667 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 3 )
+
+[node name="Player" type="CanvasLayer" parent="Art"]
+visible = false
+follow_viewport_enable = true
+follow_viewport_scale = 1.5
+
+[node name="FGSeat" type="Sprite" parent="Art/Player"]
+position = Vector2( 389.167, 231.667 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 9 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "Ending1"
+anims/Ending1 = SubResource( 4 )
+anims/RESET = SubResource( 5 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 2
+
+[node name="Panel" type="Panel" parent="CanvasLayer"]
+visible = false
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -512.0
+margin_top = -274.0
+margin_right = 512.0
+margin_bottom = -74.0
+
+[node name="Ending Text" type="Label" parent="CanvasLayer/Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 6 )
+text = "\"You embraced the struggles of those you met, lightening their load. The weight, however, leaves its mark on your soul.\""
+align = 1
+valign = 1
+autowrap = true
+percent_visible = 0.0
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="FadeToBlack" type="CanvasLayer" parent="CanvasLayer/Control"]
+layer = 2
+
+[node name="Panel" type="Panel" parent="CanvasLayer/Control/FadeToBlack"]
+visible = false
+self_modulate = Color( 0, 0, 0, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( -319, 291 )
+
+[node name="End" type="Label" parent="CanvasLayer/Control/FadeToBlack/Panel"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 7 )
+text = "Ending 2"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+volume_db = -20.0
+autoplay = true

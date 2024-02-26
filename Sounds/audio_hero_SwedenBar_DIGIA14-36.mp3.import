@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/audio_hero_SwedenBar_DIGIA14-36.mp3-03bdba95d1eec437b424e55948d694fd.mp3str"
+
+[deps]
+
+source_file="res://Sounds/audio_hero_SwedenBar_DIGIA14-36.mp3"
+dest_files=[ "res://.import/audio_hero_SwedenBar_DIGIA14-36.mp3-03bdba95d1eec437b424e55948d694fd.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
